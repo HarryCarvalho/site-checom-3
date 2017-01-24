@@ -14,11 +14,31 @@
 }
 
 .top_row {
-    padding: 15px 0;
     box-sizing: border-box;
     padding: 9px 26px;
 }
 
 .main_menu {
     float: right;
+    position: relative;
+    bottom: 0px;
+    top: 1em;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #ab1a1a;
+    color: #fff;
+    transition-duration: 0.2s;
+}
+
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: #1e1e1e;
+    color: #fff;
+    transition-duration: 0.2s;
 }
