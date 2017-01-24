@@ -27,6 +27,7 @@
 
 .banner img {
     max-width: 100%;
+    height: auto;
 }
 
 .nav>li>a:hover {
@@ -41,4 +42,40 @@
     background-color: #1e1e1e;
     color: #fff;
     transition-duration: 0.2s;
+}
+
+.footer_row {
+    display: block;
+    background: rgba(10, 9, 9, 0.71);
+    border-top: 0.4em darkred solid;
+    min-width: 300px;
+    height: 10em;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.texto_slide {
+    color: #efefef;
+    text-align: left;
+    background: rgba(60, 56, 56, 0.7);
+    padding: 5em 2em 0 3em;
+    position: fixed;
+    top: 0em;
+    height: initial;
+    max-width: 562px;
+    left: 10em;
+    bottom: 0;
+}
+
+
+}
+.texto_slide b,
+strong {
+    color: #a71c20;
+    text-shadow: none;
+}
+.texto_slide h1 {
+    font-weight: 600;
 }
