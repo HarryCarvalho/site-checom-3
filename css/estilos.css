@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    background: #efefef;
+    border-top: 0.6em darkred solid;
+    min-width: 300px;
+}
+
+.cabecalho img {
+    max-width: 180px;
+}
+
+.top_row {
+    padding: 15px 0;
+    box-sizing: border-box;
+    padding: 9px 26px;
+}
+
+.main_menu {
+    float: right;
+}
