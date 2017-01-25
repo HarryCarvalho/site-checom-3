@@ -79,6 +79,14 @@
     border-bottom: #cacaca 3px solid;
 }
 
+.higligths li img {
+    max-width: 30%;
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
 
 /* slide home */
 
