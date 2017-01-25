@@ -62,6 +62,23 @@
     margin: 0 auto;
 }
 
+.higligths ul {
+    float: left;
+}
+
+.higligths li {
+    display: block;
+    list-style: none;
+    float: left;
+    padding: 10px 20px;
+    max-width: 30%;
+    text-align: center;
+    font-weight: bold;
+    background: #f9f9f9;
+    margin: 5px;
+    border-bottom: #cacaca 3px solid;
+}
+
 
 /* slide home */
 
@@ -95,11 +112,10 @@ strong {
     color: #a71c20;
 }
 
-
-}
 .texto_slide h1 {
     font-weight: 600;
 }
+
 .dropdown-menu {
     position: absolute;
     z-index: 1000;
@@ -114,19 +130,39 @@ strong {
     background-clip: padding-box;
     border-radius: 4px;
 }
+
 .img-responsive {
     width: 50%;
 }
+
 .nav_institucional {
     margin: 20px 0;
     background: #eee;
 }
+
 .nav_institucional>li>a {
     position: relative;
     display: block;
     padding: 8px 15px;
     border-bottom: 2px #f3f3f3 solid;
 }
+
+.item>.btn {
+    background: none;
+    color: #fff;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 60%;
+    position: relative;
+    left: 0;
+}
+
+.item .btn:hover {
+    background: darkred;
+    color: #fff;
+}
+
 .subtop {
     display: block;
     background: #221a1b;
@@ -135,71 +171,93 @@ strong {
     font-weight: 600;
     color: #fff;
 }
+
 .nav-tabs a {
     color: #312020;
     font-weight: 700;
     border-radius: 60px;
 }
+
 .tab-content {
     margin-top: 2em;
 }
 
+.barra_lateral {}
+
+
 /*rodape*/
+
 .localizacao {
     border: red 1px solid;
     padding: 10px;
 }
+
 .footer_row {
     color: #ccc;
     position: fixed;
 }
+
 .footer_row a {
     list-style: none;
     color: #ccc;
 }
+
 .footer_row a:hover {
     list-style: none;
     color: #ccc;
     text-decoration: none;
     font-weight: 600;
 }
+
 .icon_point {
     float: left;
     margin-right: 15px;
     height: 100%;
     max-width: 40px;
 }
+
 .mapa_site {
     padding: 0 20px;
 }
+
 .mapa_site ul li {
     list-style: none;
     float: left;
 }
+
 .mapa_site ul li a {
     padding: 4px 8px;
     display: block;
     background: #646464;
     margin: 1px;
 }
+
 .mapa_site ul li a:hover {
     font-weight: normal;
     background: #333333;
 }
+
 .mensagem {
     display: none;
 }
+
 #contact_cards .card_col>.wrapper {
     padding: 10px;
-    border-bottom: 4px solid #1a1a1a;
     color: #c0c0c0;
     text-align: center;
     height: 100%;
 }
+
 .wrapper img {
     max-width: 40px;
     margin-bottom: 1em;
 }
+
+.wrapper loc a {
+    display: block;
+    background: darkred;
+}
+
 .nav .link_blog a {
     display: block;
     border: 2px #aaa solid;
@@ -207,7 +265,31 @@ strong {
     color: #757575;
 }
 
+.copyrigths {
+    background: rgba(10, 9, 9, 0.71);
+    text-align: center;
+    color: #757575;
+    border-top: rgba(60, 56, 56, 0.7)solid 1px;
+    padding-top: 3px;
+}
+
+.wrapper .btn {
+    background: none;
+    color: #fff;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 60%;
+}
+
+.wrapper .btn:hover {
+    background: darkred;
+    color: #fff;
+}
+
+
 /*responsividade*/
+
 @media screen and (max-width: 700px) {
     .texto_slide {
         text-align: left;
