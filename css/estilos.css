@@ -26,8 +26,15 @@
 }
 
 .banner img {
-    max-width: 100%;
-    height: auto;
+    max-width: 1122px;
+    /* Máximo da largura da imagem */
+    width: 100%;
+    /* max-height: 300px;
+     Máximo da altura da imagem */
+    min-height: auto;
+    /* Mínimo da altura, por padrão “auto” */
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .nav>li>a:hover {
@@ -50,32 +57,129 @@
     border-top: 0.4em darkred solid;
     min-width: 300px;
     height: 10em;
-    /*position: fixed;*/
     bottom: 0;
     width: 100%;
     margin: 0 auto;
 }
 
+
+/* slide home */
+
 .texto_slide {
     color: #efefef;
     text-align: left;
     background: rgba(60, 56, 56, 0.7);
-    padding: 5em 2em 0 3em;
-    position: fixed;
+    padding: 4% 2em 0 3em;
+    position: absolute;
     top: 0em;
     height: initial;
     max-width: 562px;
     left: 10em;
     bottom: 0;
+    font-size: 1em;
 }
 
-
+.texto_slide h3 {
+    display: block;
+    background: rgba(10, 9, 9, 0.2);
+    padding: 5px 10px;
+    color: #f5deb3;
+    border-bottom: 2px #a71c20 solid;
+    max-width: 350px;
+    border-radius: 0 22px 0 22px;
 }
+
 .texto_slide b,
 strong {
+    font-weight: bold;
     color: #a71c20;
-    text-shadow: none;
+}
+
+
 }
 .texto_slide h1 {
     font-weight: 600;
+}
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border-radius: 4px;
+}
+.img-responsive {
+    width: 50%;
+}
+
+/*rodape*/
+.localizacao {
+    border: red 1px solid;
+    padding: 10px;
+}
+.footer_row {
+    color: #ccc;
+}
+.footer_row a {
+    list-style: none;
+    color: #ccc;
+}
+.footer_row a:hover {
+    list-style: none;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 600;
+}
+.icon_point {
+    float: left;
+    margin-right: 15px;
+    height: 100%;
+    max-width: 40px;
+}
+.mapa_site {
+    padding: 0 20px;
+}
+.mapa_site ul li {
+    list-style: none;
+    float: left;
+}
+.mapa_site ul li a {
+    padding: 4px 8px;
+    display: block;
+    background: #646464;
+    margin: 1px;
+}
+.mapa_site ul li a:hover {
+    font-weight: normal;
+    background: #333333;
+}
+.mensagem {
+    display: none;
+}
+
+/*teste contato*/
+#contact_cards .card_col>.wrapper {
+    background: #f2f2f2;
+    padding: 10px;
+    border-bottom: 4px solid #1a1a1a;
+    color: #1a1a1a;
+    text-align: center;
+    height: 100%;
+}
+
+/*responsividade*/
+@media screen and (max-width: 700px) {
+    .texto_slide {
+        text-align: left;
+        padding: 4% 5em 0 5em;
+        height: initial;
+        left: 0;
+        width: 104%;
+    }
 }
