@@ -1,6 +1,35 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #565656;
+    display: block;
+    border-left: #ded6af 6px solid;
+    margin-bottom: 20px;
+    padding: 0 0 2px 13px;
+    font-weight: 600;
+}
+
+.preload {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #fff;
+    background-image: url('https://38.media.tumblr.com/bec5933eea5043acf6a37bb1394384ab/tumblr_meyfxzwXUc1rgpyeqo1_400.gif');
+    background-size: 298px 298px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .topo {
@@ -18,11 +47,26 @@
     padding: 9px 26px;
 }
 
+#ao_topo {
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
 .main_menu {
     float: right;
     position: relative;
     bottom: 0px;
     top: 1em;
+}
+
+.affix {
+    position: fixed;
+    top: 0;
+    width: 10.5em;
+    transition: 1s;
+    transition-duration: 1s;
 }
 
 .banner img {
@@ -42,6 +86,8 @@
     background-color: #ab1a1a;
     color: #fff;
     transition-duration: 0.2s;
+    border-bottom: red solid 2px;
+    transition: .5s;
 }
 
 .nav>li>a:focus {
@@ -87,16 +133,65 @@
     margin: 10px auto;
 }
 
-.muda-liguagem {
-    position: absolute;
-    top: 2px;
-    border: 1px red solid;
+.barra_top {
+    background: #5a5a5a;
+    padding: 2px;
 }
 
 .muda-liguagem img {
-    max-width: 20px;
+    max-width: 15px;
     margin: 2px;
     float: left;
+}
+
+.muda-liguagem li {
+    display: block;
+    float: left;
+    padding: 0 2px;
+    width: 60px;
+}
+
+.muda-liguagem li a {
+    display: block;
+    color: gainsboro;
+}
+
+.navbar-toggle {
+    padding: 0;
+    margin-top: .5em;
+}
+
+.navbar-brand {
+    height: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+    float: none;
+}
+
+.img-responsive {
+    max-width: 2000px;
+    height: 1000px;
+    background: url(img/slids/crianca_ipad.jpg) space cover;
+}
+
+.area_do_cliente {
+    padding: 1px 22px;
+    font-weight: bold;
+    background: #8b0000;
+    color: #f7f7f7;
+    border: #212020 solid 2px;
+    position: relative;
+    /* right: 2px; */
+    margin: 0 auto;
+    float: right;
+    max-width: 137px;
+    text-align: center;
+}
+
+.area_do_cliente:hover {
+    background: #171717;
+    color: #f7f7f7;
 }
 
 
@@ -185,11 +280,15 @@ strong {
 
 .subtop {
     display: block;
-    background: #221a1b;
+    background: url(http://sites.ffclrp.usp.br/lapicc/novo/Content/slides/slider_12.jpg);
+    background-position: center;
+    max-background-size: 120%;
     text-align: center;
     font-size: 2em;
     font-weight: 600;
     color: #fff;
+    margin-bottom: 20px;
+    height: 5em;
 }
 
 .nav-tabs a {
@@ -203,6 +302,33 @@ strong {
 }
 
 .barra_lateral {}
+
+.nav_institucional>li>a {
+    display: block;
+    padding: 8px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    background: #f9f9f9;
+    border-bottom: 1px solid #a71c20;
+}
+
+.nav_institucional>li>a:hover {
+    background: none;
+    display: block;
+    margin: 0;
+    color: #fff;
+    background: #525050;
+    padding-left: 1em;
+    transition: 0.4s;
+    border-left: 3px #a71c20 solid;
+}
+
+.col-lg-10.col-md-10.col-sm-9.col-xs-12.corpo {
+    padding: 0 30px;
+}
 
 
 /*rodape*/
@@ -309,6 +435,45 @@ strong {
 
 .posicao {
     position: static;
+}
+
+.dropdown-toggle>li>a:focus {
+    text-decoration: none;
+    background-color: #1e1e1e;
+    color: #480202;
+    transition-duration: 0.2s;
+}
+
+.dropdown-menu {
+    background: none;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 8px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    background: #f9f9f9;
+    border-bottom: 1px solid #a71c20;
+}
+
+.dropdown-menu>li>a:hover {
+    background: none;
+    display: block;
+    margin: 0;
+    color: #fff;
+    background: #525050;
+    padding-left: 1em;
+    transition: 0.4s;
+    border-left: 3px #a71c20 solid;
+}
+
+muda-liguagem {
+    color: #fff;
+    background: #525050;
 }
 
 

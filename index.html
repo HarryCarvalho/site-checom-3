@@ -19,52 +19,74 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=ColoqueASuaKeyAqui&amp;sensor=false"></script>
 
 </head>
 
 <body>
+
     <!--topo-->
-    <div class="container-fluid muda-liguagem">
-        <span>linguagem</span>
-        <div class="BRA">
-            <img src="img/icons/idioma_bra.svg"><span>POR</span>
+    <div class="container-fluid barra_top">
+        <div class="container">
+            <div class="muda-liguagem col-lg-4 col-md-4 col-sm-4">
+                <ul class=" ling">
+                    <li>
+                        <a href="#"><img src="img/icons/idioma_eng.svg"><span>ENG</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/idioma_esp.svg"><span>ESP</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/idioma_bra.svg"><span>POR</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="area_cliente ">
+                <button class="btn area_do_cliente" type="button" value="Area do cliente" name="dashboard">area do cliente</button>
+            </div>
         </div>
-        <div class="ESP">
-            <img src="img/icons/idioma_esp.svg"><span>ESP</span>
-        </div>
-        <div class="ENG">
-            <img src="img/icons/idioma_eng.svg"><span>ENG</span>
-        </div>
+
     </div>
+
     <header>
         <div class="container-fluid topo">
             <div class="container">
 
                 <div class="row top_row">
-                    <div class="cabecalho">
-                        <a href="index.html"><img src="img/logo_checon.svg" /></a>
+                    <div class="container">
 
-                        <nav class="main_menu ">
-                            <ul class="nav nav-pills ">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="pesquisas.html">Pesquisas</a></li>
+                        <div class="row top_row">
+                            <div class="cabecalho">
+                                <a href="index.html"><img src="img/logo_checon.svg" /></a>
+                                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                    <a href="#" class="navbar-brand"><img src="img/icons/menu_collapse.svg" style="width: 2em"> </a>
+                                    </button>
 
-                                <!--<li class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pesquisas
-        <span class="caret"></span></a>
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                            <li><a href="#">Qualitativa</a></li>
-                                            <li><a href="#">Quantitativa</a></li>
-                                            <li><a href="#">Neuromarketing</a></li>
-                                            <li><a href="#">Demografica</a></li>
+                                <div class="main_menu ">
+
+                                    <nav id="navbarCollapse" class="collapse navbar-collapse">
+
+                                        <ul class="nav nav-pills">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="pesquisas.html">Pesquisa<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="pesquisas.html#topo" class="scroll">Qualitativa</a></li>
+                                                    <li><a href="pesquisas.html#link2" class="scroll">Quantitativa</a></li>
+                                                    <li><a href="pesquisas.html#link3" class="scroll">Neuromarketing</a></li>
+                                                    <li><a href="pesquisas.html#link4" class="scroll">Demografica</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="institucional.html">institucional</a></li>
+                                            <li class="link_blog"><a href="#blog">blog</a></li>
                                         </ul>
-                                    </li>
-                                    -->
+                                    </nav>
+                                </div>
 
-                                <li><a href="institucional.html">institucional</a></li>
-                                <li class="link_blog"><a href="#blog">blog</a></li>
-                            </ul>
-                        </nav>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -103,7 +125,7 @@
                         <div class="carousel-caption texto_slide">
 
                             <h3><b>#</b> Pré-teste</h3>
-                            <h1> Impacto da propaganda</h1>
+                            <a href="pesquisas.html#link3"> Impacto da propaganda</h1></a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit tortor sapien, vitae finibus sem pellentesque at.</p>
 
                         </div>
@@ -154,8 +176,28 @@
                             <div class="wrapper ">
                                 <div class="icon"><i class="fa fa-map-marker"> <img src="img/icons/map-location.svg"></i></div>
 
-                                <p>SCRN 721/713 Bl. B Ent. 6 - Loja 6 Cep:70.760.620 Brasília-DF - Brasil</p>
-                                <button class="btn">Ver no mapa</button>
+                                <p>SCRN 712/713 Bl. B Ent. 6 - Loja 6 Cep:70.760.620 Brasília-DF - Brasil</p>
+                                <button class="btn" data-toggle="modal" data-target="#myModal">Ver no mapa</button>
+                                <div class="modal fade" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>One fine body&hellip;</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
+                                <!-- /.modal -->
                             </div>
 
                         </div>
@@ -169,50 +211,50 @@
                     </div>
                 </div>
                 <!-- 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 localizacao">
-                    <a href="#">
-                        <div class="icon_point">
-                            <img class="img-responsive" src="img/icons/map-location.svg" style="width: 60px;">
-                        </div>
-                        <p>SCRN 721/713 Bl. B Ent. 6 - Loja 6 Cep:70.760.620 Brasília-DF - Brasil</p>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mapa_site">
-                    <b>links</b></br>
-                    <ul>
-                        <li><a href="#">pesquisas</a></li>
-                        <li><a href="#">institucional</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">pesquisas</a></li>
-                        <li><a href="#">institucional</a></li>
-                        <li><a href="#">blog</a></li>
-                    </ul>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 localizacao">
+                        <a href="#">
+                            <div class="icon_point">
+                                <img class="img-responsive" src="img/icons/map-location.svg" style="width: 60px;">
+                            </div>
+                            <p>SCRN 721/713 Bl. B Ent. 6 - Loja 6 Cep:70.760.620 Brasília-DF - Brasil</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mapa_site">
+                        <b>links</b></br>
+                        <ul>
+                            <li><a href="#">pesquisas</a></li>
+                            <li><a href="#">institucional</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">pesquisas</a></li>
+                            <li><a href="#">institucional</a></li>
+                            <li><a href="#">blog</a></li>
+                        </ul>
 
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 contato">
-                    <b>contatos</b></br>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 contato">
+                        <b>contatos</b></br>
 
-                    <h2>
-                        Fone
-                    </h2>
-                    
+                        <h2>
+                            Fone
+                        </h2>
+                        
 
-                    <form class="mensagem">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="password" class="form-control" id="pwd">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
+                        <form class="mensagem">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="password" class="form-control" id="pwd">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
 
 
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
 
-                </div>
-                -->
+                    </div>
+                    -->
             </div>
             <div class="container-fluid copyrigths">
                 <p>Todos os direitos reservados - Checon Pesquisa - 2017</p>
@@ -223,7 +265,8 @@
 
     </footer>
 
-
+    <script src="js/scroll.js">
+    </script>
 </body>
 
 </html>

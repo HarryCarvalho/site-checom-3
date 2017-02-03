@@ -34,86 +34,122 @@
 
 <body>
     <!--topo-->
-    <a id="topo" class="scroll">
-        <header>
-            <div class="container-fluid topo">
-                <div class="container">
-
-                    <div class="row top_row">
-                        <div class="cabecalho">
-                            <a href="index.html"><img src="img/logo_checon.svg" /></a>
-
-                            <nav class="main_menu ">
-                                <ul class="nav nav-pills">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="pesquisas.html">Pesquisas</a></li>
-
-                                    <!--<li class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pesquisas
-        <span class="caret"></span></a>
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                            <li><a href="#">Qualitativa</a></li>
-                                            <li><a href="#">Quantitativa</a></li>
-                                            <li><a href="#">Neuromarketing</a></li>
-                                            <li><a href="#">Demografica</a></li>
-                                        </ul>
-                                    </li>
-                                    -->
-
-                                    <li><a href="institucional.html">institucional</a></li>
-                                    <li class="link_blog"><a href="#blog">blog</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                    </div>
-                </div>
+    <a id="topoinst" class="scroll"> </a>
+    <div class="container-fluid barra_top">
+        <div class="container">
+            <div class="muda-liguagem col-lg-4 col-md-4 col-sm-4">
+                <ul class=" ling">
+                    <li>
+                        <a href="#"><img src="img/icons/idioma_eng.svg"><span>ENG</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/idioma_esp.svg"><span>ESP</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/idioma_bra.svg"><span>POR</span></a>
+                    </li>
+                </ul>
             </div>
-        </header>
-        <!--Fim topo-->
-        <!--CORPO MUTAVEL-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="container-fluid subtop">
-                    <h1>Institucional</h1>
-                </div>
+            <div class="area_cliente ">
+                <button class="btn area_do_cliente" type="button" value="Area do cliente" name="dashboard">area do cliente</button>
             </div>
+        </div>
+
+    </div>
+
+    <header>
+        <div class="container-fluid topo">
             <div class="container">
-                <div class=" col-lg-2 col-md-2 col-sm-12 col-xs-12 barra_lateral">
-                    <nav class=" nav_lateral affix ">
-                        <ul class="nav nav_institucional">
 
-                            <li><a href="#topo" class="scroll">A Checon</a></li>
+                <div class="row top_row">
+                    <div class="container">
 
-                            <li><a href="#link2" class="scroll">fundadores</a></li>
-                            <li><a href="#link3" class="scroll">Link 3</a></li>
-                            <li><a href="#link4" class="scroll">Link 4</a></li>
-                            <li><a href="#link5" class="scroll">Link 5</a></li>
+                        <div class="row top_row">
+                            <div class="cabecalho">
+                                <a href="index.html"><img src="img/logo_checon.svg" /></a>
+                                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                    <a href="#" class="navbar-brand"><img src="img/icons/menu_collapse.svg" style="width: 2em"> </a>
+                                    </button>
 
-                        </ul>
-                    </nav>
+                                <div class="main_menu ">
+
+                                    <nav id="navbarCollapse" class="collapse navbar-collapse">
+
+                                        <ul class="nav nav-pills">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="pesquisas.html">Pesquisa<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="pesquisas.html#topo" class="scroll">Qualitativa</a></li>
+                                                    <li><a href="pesquisas.html#link2" class="scroll">Quantitativa</a></li>
+                                                    <li><a href="pesquisas.html#link3" class="scroll">Neuromarketing</a></li>
+                                                    <li><a href="pesquisas.html#link4" class="scroll">Demográfica</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="institucional.html">institucional</a></li>
+                                            <li class="link_blog"><a href="#blog">blog</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+    </header>
+    <!--Fim topo-->
+    <!--CORPO MUTAVEL-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid subtop">
+                <h1>Institucional</h1>
+            </div>
+        </div>
+        <div id="ao_topo">
+            <img src="img/icons/ao_topo.svg">
+        </div>
+        <div class="container">
+            <div class=" col-lg-2 col-md-2 col-sm-3 col-xs-12 barra_lateral">
+                <nav class=" nav_lateral  hidden-print hidden-xs affix" data-spy="affix" data-offset-top="150">
+                    <ul class="nav nav_institucional">
 
-                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 corpo">
-                    <!-- A CHECOM  -->
-                    <div class="scroll achecon ">
-                        <a id="achecon" class="scroll">
-                            <h2>A Checon</h2>
-                        </a>
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-justified nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#missao" aria-controls="missao" role="tab" data-toggle="tab">Política de Qualidade</a></li>
-                            <li role="presentation"><a href="#visao" aria-controls="visao" role="tab" data-toggle="tab">Diferenciais</a></li>
-                            <li role="presentation"><a href="#valores" aria-controls="valores" role="tab" data-toggle="tab">Fundadores</a></li>
-                            <li role="presentation"><a href="#sobre" aria-controls="sobre" role="tab" data-toggle="tab">Settings</a></li>
-                        </ul>
+                        <li><a href="#topoinst" class="scroll">A Checon</a></li>
+                        <li><a href="#link2inst" class="scroll">Política de</br> Qualidade</a></li>
+                        <li><a href="#link3inst" class="scroll">Infraestrutura</a></li>
+                        <li><a href="#link4inst" class="scroll">Atuação</a></li>
+                        <li><a href="#link5inst" class="scroll">Certificações</a></li>
+                        <li><a href="#link6inst" class="scroll">Eventos</a></li>
 
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="missao">
 
-                                <p>
-                                    A <strong> Checon </strong >visa fornecer estudos customizados que gerem informações confiáveis, estratégicas e seguras, sempre observando e cumprindo os códigos de ética e aspectos legais. Os resultados das pesquisas deverão possibilitar um melhor processo de decisão aos
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12 corpo">
+                <!-- A CHECOM  -->
+                <div class="scroll achecon ">
+                    <a id="achecon" class="scroll">
+                        <h2>A Checon</h2>
+                    </a>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-justified nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#missao" aria-controls="missao" role="tab" data-toggle="tab">História</a></li>
+                        <li role="presentation"><a href="#visao" aria-controls="visao" role="tab" data-toggle="tab">Diferenciais</a></li>
+                        <li role="presentation"><a href="#valores" aria-controls="valores" role="tab" data-toggle="tab">Fundadores</a></li>
+                        <li role="presentation"><a href="#sobre" aria-controls="sobre" role="tab" data-toggle="tab">Equipe</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="missao">
+
+                            <p>
+                                A <strong> Checon </strong >visa fornecer estudos customizados que gerem informações confiáveis, estratégicas e seguras, sempre observando e cumprindo os códigos de ética e aspectos legais. Os resultados das pesquisas deverão possibilitar um melhor processo de decisão aos
                                 nossos clientes.
                             </p>
                             <p> 
@@ -148,22 +184,19 @@
                             </div>
                      
                     </div> 
-                </div>
-            
-             <!-- link 2 -->
-             <div class="scroll link2 ">
-<br></br><br></br><br></br>
-<a id="link2" class="scroll"> <h2>LINK 2</h2> </a>
+                    <br></br><br></br><br></br>
+               <div class="row"><a id="link2inst" class="scroll"> <h2>Política de Qualidade</h2> </a>
                  <p>
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
 </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
 Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
                  </p>
              </div>
+             </div> 
               <!-- link 3 -->
               <div>
 <br></br><br></br><br></br>
-<a id="link3" class="scroll link3"> <h2>LINK 3 </h2> </a>
+<a id="link3inst" class="scroll link3"> <h2>Infraestrutura</h2> </a>
                  <p>
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
 </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
@@ -173,7 +206,7 @@ Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultr
                <!-- link 4 -->
                <div>
 <br></br><br></br><br></br>
-<a id="link4" class="scroll link4"> <h2>LINK 4 </h2> </a>
+<a id="link4inst" class="scroll link4"> <h2>Atuação </h2> </a>
                  <p>
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
 </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
@@ -182,17 +215,24 @@ Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultr
              </div>
                 <!-- link 5 -->
                
-<br></br><br></br><br></br>
-<a id="link5" class="scroll link3"> <h2>LINK 5 </h2> </a>
+                    <br></br><br></br><br></br>
+                    <a id="link5inst" class="scroll link3"> <h2>Certificações </h2> </a>
                  <p>
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
-</br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
-Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
+                        </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
+                        Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
                  </p>
              </div>
           </div>
         </div>
+        
     </div>
+                </div>
+            
+             <!-- link 2 -->
+             <div class="scroll link2 ">
+
+   
     <!--FIM CORPO MUTAVEL-->
     <footer>
         <div class="row footer_row posicao">
@@ -279,7 +319,8 @@ Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultr
 
     </footer>
 
-
+<script src="js/scroll.js">
+    </script>
 </body>
 
 </html>
