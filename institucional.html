@@ -34,23 +34,41 @@
 
 <body>
     <!--topo-->
-    <a id="topoinst" class="scroll"> </a>
-    <div class="container-fluid barra_top">
+    <a id="topo" class="scroll"> </a>
+    <div class=" container-fluid barra_top">
         <div class="container">
             <div class="muda-liguagem col-lg-4 col-md-4 col-sm-4">
                 <ul class=" ling">
+                    <li>
+                        <a href="#"><img src="img/icons/idioma_bra.svg"><span>POR</span></a>
+                    </li>
                     <li>
                         <a href="#"><img src="img/icons/idioma_eng.svg"><span>ENG</span></a>
                     </li>
                     <li>
                         <a href="#"><img src="img/icons/idioma_esp.svg"><span>ESP</span></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="img/icons/idioma_bra.svg"><span>POR</span></a>
-                    </li>
+
                 </ul>
             </div>
-            <div class="area_cliente ">
+            <div class=" col-lg-4 col-md-4  busca">
+                <div class="row">
+
+
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control  input-sm pesquisa_campo" placeholder="busca...">
+                            <span class="input-group-btn">
+                        <button class="btn btn-xs glyphicon glyphicon-search btn_pesquisa" type="button"></button>
+                    </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class=" col-lg-4 col-md-4  area_cliente ">
                 <button class="btn area_do_cliente" type="button" value="Area do cliente" name="dashboard">area do cliente</button>
             </div>
         </div>
@@ -77,17 +95,22 @@
 
                                         <ul class="nav nav-pills">
                                             <li><a href="index.html">Home</a></li>
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="pesquisas.html">Pesquisa<span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="pesquisas.html#topo" class="scroll">Qualitativa</a></li>
-                                                    <li><a href="pesquisas.html#link2" class="scroll">Quantitativa</a></li>
-                                                    <li><a href="pesquisas.html#link3" class="scroll">Neuromarketing</a></li>
-                                                    <li><a href="pesquisas.html#link4" class="scroll">Demográfica</a></li>
-                                                </ul>
-                                            </li>
-
                                             <li><a href="institucional.html">institucional</a></li>
+                                            <li><a href="pesquisas.html">Soluções</a></li>
+                                            <!-- DROPDOWN PESQUISAS
+                                                            <li class="dropdown">
+                                                            <a class="dropdown-toggle" data-toggle="dropdown" href="pesquisas.html">Pesquisa<span class="caret"></span></a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="pesquisas.html#topo" class="scroll">Qualitativa</a></li>
+                                                                <li><a href="pesquisas.html#link2" class="scroll">Quantitativa</a></li>
+                                                                <li><a href="pesquisas.html#link3" class="scroll">Neuromarketing</a></li>
+                                                                <li><a href="pesquisas.html#link4" class="scroll">Demografica</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        -->
+
+                                            <li><a href="#">Cases</a></li>
+
                                             <li class="link_blog"><a href="#blog">blog</a></li>
                                         </ul>
                                     </nav>
@@ -110,133 +133,140 @@
                 <h1>Institucional</h1>
             </div>
         </div>
-        <div id="ao_topo">
-            <img src="img/icons/ao_topo.svg">
-        </div>
+
         <div class="container">
             <div class=" col-lg-2 col-md-2 col-sm-3 col-xs-12 barra_lateral">
                 <nav class=" nav_lateral  hidden-print hidden-xs affix" data-spy="affix" data-offset-top="150">
-                    <ul class="nav nav_institucional">
+                    <ul class="nav nav_institucional ">
 
-                        <li><a href="#topoinst" class="scroll">A Checon</a></li>
-                        <li><a href="#link2inst" class="scroll">Política de</br> Qualidade</a></li>
-                        <li><a href="#link3inst" class="scroll">Infraestrutura</a></li>
+                        <li><a href="#topo" class="scroll">A Checon</a></li>
+                        <li><a href="#link2inst" class="scroll">Infraestrutura</a></li>
+                        <li><a href="#link3inst" class="scroll">Política de</br> Qualidade</a></li>
                         <li><a href="#link4inst" class="scroll">Atuação</a></li>
-                        <li><a href="#link5inst" class="scroll">Certificações</a></li>
-                        <li><a href="#link6inst" class="scroll">Eventos</a></li>
+                        <li><a href="#link5inst" class="scroll">Associações</a></li>
+                        <li><a href="#link6inst" class="scroll">Certificações</a></li>
+                        <li><a href="#link7inst" class="scroll">Eventos</a></li>
+                        <li><a href="#link8inst" class="scroll">Mídia</a></li>
+                        <li><a href="#link9inst" class="scroll">Depoimentos</a></li>
 
 
                     </ul>
                 </nav>
             </div>
+            <!-- fim da barra lateral-->
 
             <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12 corpo">
                 <!-- A CHECOM  -->
-                <div class="scroll achecon ">
+                <div class="scroll">
                     <a id="achecon" class="scroll">
                         <h2>A Checon</h2>
                     </a>
                     <!-- Nav tabs -->
                     <ul class="nav nav-justified nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#missao" aria-controls="missao" role="tab" data-toggle="tab">História</a></li>
-                        <li role="presentation"><a href="#visao" aria-controls="visao" role="tab" data-toggle="tab">Diferenciais</a></li>
-                        <li role="presentation"><a href="#valores" aria-controls="valores" role="tab" data-toggle="tab">Fundadores</a></li>
                         <li role="presentation"><a href="#sobre" aria-controls="sobre" role="tab" data-toggle="tab">Equipe</a></li>
+                        <li role="presentation"><a href="#valores" aria-controls="valores" role="tab" data-toggle="tab">Fundadores</a></li>
+                        <li role="presentation"><a href="#visao" aria-controls="visao" role="tab" data-toggle="tab">Diferenciais</a></li>
+
+
                     </ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="missao">
+                            <p>A <strong> Checon </strong >visa fornecer estudos customizados que gerem informações confiáveis, estratégicas e seguras, sempre observando e cumprindo os códigos de ética e aspectos legais. Os resultados das pesquisas deverão possibilitar um melhor processo de decisão aos nossos clientes.</p>
+                                <p>Nos comprometemos a buscar a melhoria contínua dos nossos processos e aperfeiçoamento de nossos serviços, procurando atender ao mercado através: </p>
+                                    <ul class="higligths">
+                                        <li class="higligths_card">
+                                            <img src="img/icons/idea.svg"> da busca por novas e criativas tecnologias e metodologias;</li>
+                                        <li class="higligths_card">
+                                            <img src="img/icons/melhora.svg">da melhoria dos produtos e serviços já desenvolvidos;</li>
+                                        <li class="higligths_card">
+                                            <img src="img/icons/network.svg">a manutenção da eficácia do Sistema de Gestão da Qualidade.</li>
+                                    </ul>                                
+                                     <br></br><br></br><br></br>
+                            </div>
 
-                            <p>
-                                A <strong> Checon </strong >visa fornecer estudos customizados que gerem informações confiáveis, estratégicas e seguras, sempre observando e cumprindo os códigos de ética e aspectos legais. Os resultados das pesquisas deverão possibilitar um melhor processo de decisão aos
-                                nossos clientes.
-                            </p>
-                            <p> 
-                                    Nos comprometemos a buscar a melhoria contínua dos nossos processos e aperfeiçoamento de nossos serviços, procurando atender ao mercado através: 
-                                <ul class="higligths col-10">
-                                    <li>
-                                        <img src="img/icons/idea.svg">
-                                        da busca por novas e criativas tecnologias e metodologias;</li>
-                                    <li> 
-                                        <img src="img/icons/melhora.svg">
-                                    da melhoria dos produtos e serviços já desenvolvidos;</li>
-                                    <li>
-                                        <img src="img/icons/network.svg">
-                                        a manutenção da eficácia do Sistema de Gestão da Qualidade.</li>
-                                </ul>
-                            </p>
-                            <img src="http://www.juliencasanova.com/file/2016/07/144.jpg">
+                            <div role="tabpanel" class="tab-pane" id="visao">
+                                Empresaelhor orientação para o processo de tomada de decisões. Somos o resultado da união de profissionais com experiência internacional e com competência comprovada nos setores acadêmico, público e privado
+                                <img src="http://dmcube.com/wp-content/uploads/2014/11/How-to-Use-Social-Media-for-Business-Promotion.jpg">
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="valores">
+                                Empresa c que gerem sempre informações seguras, permitindo uma melhor orientação para o processo de tomada de decisões. Somos o resultado da união de profissionais com experiência internacional e com competência comprovada nos
+                                setores acadêmico, público e privado
+                                <img src="http://meditnor.org/wp-content/uploads/2016/02/10-tips-to-improve-your-business.jpg">
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="sobre">
+                                Emprrtificada na ISO 20.252 (ABNT NBR ISO 20.252) A Checon foi criada em 1992 para atender nas áreas de pesquisas de opinião e mercado, com o objetivo de fornecer a seus clientes estudos customizados, com trabalhos de qualidade,
+                                que gerem stação para o processo de tomada de decisões. Somos o resultado da união de profissionais com experiência internacional e com competência comprovada nos setores acadêmico, público e privado
+                                <img src="https://experience.sap.com/wp-content/uploads/2014/09/BusinessOrigami1-800x400.png">
+                            </div>
+                        
+                        </div> <!-- FIM A CHECOM--> 
+                <!--link2-->
+                        <div>
+                                <br></br><br></br><br></br>
+                                <a id="link2inst" class="scroll"> <h2>Infraestrutura</h2> </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.</br>
+                                <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
+                                Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
+                                </p>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="visao">
-                            Empresaelhor orientação para o processo de tomada de decisões. Somos o resultado da união de profissionais com experiência internacional e com competência comprovada nos setores acadêmico, público e privado
-                          <img src="http://dmcube.com/wp-content/uploads/2014/11/How-to-Use-Social-Media-for-Business-Promotion.jpg">
-                         </div>
-                        <div role="tabpanel" class="tab-pane" id="valores">
-                            Empresa c que gerem sempre informações seguras, permitindo uma melhor orientação para o processo de tomada de decisões. Somos o resultado da união de profissionais com experiência internacional e com competência comprovada nos
-                            setores acadêmico, público e privado
-                             <img src="http://meditnor.org/wp-content/uploads/2016/02/10-tips-to-improve-your-business.jpg">
-                            </div>
-                        <div role="tabpanel" class="tab-pane" id="sobre">
-                            Emprrtificada na ISO 20.252 (ABNT NBR ISO 20.252) A Checon foi criada em 1992 para atender nas áreas de pesquisas de opinião e mercado, com o objetivo de fornecer a seus clientes estudos customizados, com trabalhos de qualidade,
-                            que gerem stação para o processo de tomada de decisões. Somos o resultado da união de profissionais com experiência internacional e com competência comprovada nos setores acadêmico, público e privado
-                            <img src="https://experience.sap.com/wp-content/uploads/2014/09/BusinessOrigami1-800x400.png">
-                            </div>
-                     
-                    </div> 
-                    <!--link2-->
-                    <br></br><br></br><br></br>
-               <div class="row"><a id="link2inst" class="scroll"> <h2>Política de Qualidade</h2> </a>
-                 <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
-                    </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
-                    Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
-                 </p>
-             </div>
-             </div> 
               <!-- link 3 -->
-              <div>
-                <br></br><br></br><br></br>
-                <a id="link3inst" class="scroll link3"> <h2>Infraestrutura</h2> </a>
-                 <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
-                        </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
-                        Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
-                 </p>
-             </div>
-               <!-- link 4 -->
-               <div>
-                <br></br><br></br><br></br>
-                <a id="link4inst" class="scroll link4"> <h2>Atuação </h2> </a>
-                 <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
-                    </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
-                    Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
-                 </p>
-             </div>
+                        <br></br><br></br><br></br>
+                        <div class="row"><a id="link3inst" class="scroll">
+                            <h2>Política de Qualidade</h2> </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
+                                </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
+                                Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
+                                </p>
+                         </div>
+                        
+             <!-- link 4 -->
+                        <div class="row sessao">
+                            <br></br><br></br><br></br>
+                            <a id="link4inst" class="scroll link4">
+                             <h2>Atuação </h2> </a>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
+                                </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
+                                Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
+                                </p>
+                        </div>
                 <!-- link 5 -->
-               
-                    <br></br><br></br><br></br>
-                    <a id="link5inst" class="scroll link3"> <h2>Certificações </h2> </a>
-                 <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.
-                        </br> <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
-                        Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
-                 </p>
+                      <div class="row sessao">
+                            <br></br><br></br><br></br>
+                            <a id="link5inst" class="scroll link3">
+                                <h2>Associações</h2> </a>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.</br>
+                                    <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
+                                    Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
+                                    </p>
+                     </div>
               <!-- link 6 -->
-       
-                <div class="scroll achecon ">
-                    <a id="link6inst" class="scroll">
+                      <div class="row sessao">
+                            <br></br><br></br><br></br>
+                            <a id="link6inst" class="scroll link8">
+                                <h2>Certificações </h2> </a>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.</br>
+                                    <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
+                                    Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
+                                    </p>
+                     </div> 
+               
+                 <!-- link 7 -->
+                       <div class="row sessao">
+                    <a id="link7inst" class="scroll">
                         <h2>Eventos</h2>
                     </a>
                     <!-- Nav tabs -->
                     <ul class="nav nav-justified nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#event1" aria-controls="event1" role="tab" data-toggle="tab">ESOMAR</a></li>
-                        <li role="presentation"><a href="#event2" aria-controls="event2" role="tab" data-toggle="tab">evento2</a></li>
-                        <li role="presentation"><a href="#event3" aria-controls="event3" role="tab" data-toggle="tab">evento 3</a></li>
-                        <li role="presentation"><a href="#event4" aria-controls="event4" role="tab" data-toggle="tab">evento 4</a></li>
+                        <li role="presentation"><a href="#event2" aria-controls="event2" role="tab" data-toggle="tab">UX / Eye Tracking</a></li>
+                        <li role="presentation"><a href="#event3" aria-controls="event3" role="tab" data-toggle="tab">Neuromarketing</a></li>
+                        <li role="presentation"><a href="#event4" aria-controls="event4" role="tab" data-toggle="tab">ICWSM</a></li>
                     </ul>
-
+                  
+		<a href="#0" class="close cd-img-replace">Close</a>
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="event1">
@@ -273,18 +303,35 @@
                             que gerem stação para o processo de tomada de decisões. Somos o resultado da união de profissionais com experiência internacional e com competência comprovada nos setores acadêmico, público e privado
                             <img src="https://experience.sap.com/wp-content/uploads/2014/09/BusinessOrigami1-800x400.png">
                             </div>
-                     
-                    </div>
-
-             </div>
-          
-          
-          
-          </div>
-        </div>
-        
-    </div>
+                     </div> <!--FIM tabs-->
                 </div>
+                <!-- link 8 -->
+                      <div class="row sessao">
+                            <br></br><br></br><br></br>
+                            <a id="link8inst" class="scroll link8">
+                                <h2>Mídia </h2> </a>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.</br>
+                                    <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
+                                    Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
+                                    </p>
+                     </div>      
+          
+             <!-- link 9 -->
+                      <div class="row sessao">
+                            <br></br><br></br><br></br>
+                            <a id="link9inst" class="scroll link9">
+                                <h2>Depoimentos </h2> </a>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare consequat libero sed lobortis. In eget eros eget quam imperdiet tincidunt. Pellentesque ultricies quis nisl nec faucibus. Pellentesque ornare porta justo, vehicula facilisis nisl congue vel. Aliquam vestibulum magna magna, vitae fringilla magna tempor vel. Cras ultrices, nisl laoreet consequat pulvinar, quam sapien finibus turpis, in interdum sem orci vel odio. Etiam consectetur, ipsum at congue efficitur, dui metus vehicula eros, at faucibus metus diam et mauris. Integer et maximus dolor. Aenean tristique vestibulum mi in mattis. In in viverra lectus. Etiam felis dui, vehicula ac mi nec, facilisis tincidunt quam. Quisque non nibh enim. Praesent eu sapien nulla. Donec eu enim tristique, gravida orci ut, rhoncus ligula. In venenatis tincidunt tristique. Nunc vulputate lectus ut eros pulvinar faucibus.</br>
+                                    <img src="http://www.tauntonwomensrefuge.org.uk/wp-content/uploads/2016/03/learn-success-online-business-05-1.jpg">
+                                    Nulla facilisi. Phasellus vitae laoreet quam. In accumsan eleifend urna, ac ultricies nisi laoreet vitae. Cras urna erat, convallis in nulla nec, cursus porta magna. Quisque eget enim velit. Cras vulputate sit amet dui vitae convallis. Nulla condimentum magna mauris, vel sagittis dui faucibus et. Integer scelerisque scelerisque leo quis placerat. Ut sed velit sit amet eros porttitor hendrerit sit amet at risus. Sed id commodo diam.
+                                    </p>
+                     </div>
+            </div>
+            </div> 
+          </div> <!--conteudo-->
+        </div> <!--fim container-->
+        
+   
             
             
    
@@ -373,6 +420,7 @@
 
 
     </footer>
+    
 
 <script src="js/scroll.js">
     </script>

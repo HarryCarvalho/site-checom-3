@@ -48,6 +48,16 @@ h2 {
     margin-top: -12px;
 }
 
+.navbar-brand img {
+    max-width: 40px;
+    background: none;
+    padding: 0;
+    z-index: 1000;
+    position: relative;
+    bottom: none;
+    margin-top: none;
+}
+
 .top_row {
     box-sizing: border-box;
     padding: 0px 26px;
@@ -85,6 +95,40 @@ h2 {
     /* Mínimo da altura, por padrão “auto” */
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: darkred;
+    background: white;
+    border-radius: 0;
+}
+
+.pesquisa_campo {
+    background: #232323;
+    border: 2px #aba9a9 solid;
+    border-radius: 20px;
+    color: #a5adad;
+    height: 26px;
+}
+
+.form-control:focus {
+    transform-duration: .5s;
+    transition-duration: .5s;
+    background: #ffffff;
+    border: 2px #a71c20 solid;
+    color: #1d1d1d;
+}
+
+.btn_pesquisa {
+    background: #484646;
+    height: 26px;
+    border: 2px #aba9a9 solid;
+    border-radius: 20px;
+    margin-top: -1px;
+    color: lightgray;
 }
 
 .nav>li>a:hover {
@@ -502,5 +546,17 @@ muda-liguagem {
         height: initial;
         left: 0;
         width: 104%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .higligths_card {
+        max-width: 100% !important;
+        text-align: left !important;
+    }
+    .higligths_card img {
+        width: 3em;
+        margin: 0 15px !important;
+        float: left !important;
     }
 }

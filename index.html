@@ -19,6 +19,8 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
     <script src="http://maps.googleapis.com/maps/api/js?key=ColoqueASuaKeyAqui&amp;sensor=false"></script>
 
 </head>
@@ -26,22 +28,40 @@
 <body>
 
     <!--topo-->
-    <div class="container-fluid barra_top">
+    <div class=" container-fluid barra_top">
         <div class="container">
             <div class="muda-liguagem col-lg-4 col-md-4 col-sm-4">
                 <ul class=" ling">
+                    <li>
+                        <a href="#"><img src="img/icons/idioma_bra.svg"><span>POR</span></a>
+                    </li>
                     <li>
                         <a href="#"><img src="img/icons/idioma_eng.svg"><span>ENG</span></a>
                     </li>
                     <li>
                         <a href="#"><img src="img/icons/idioma_esp.svg"><span>ESP</span></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="img/icons/idioma_bra.svg"><span>POR</span></a>
-                    </li>
+
                 </ul>
             </div>
-            <div class="area_cliente ">
+            <div class=" col-lg-4 col-md-4  busca">
+                <div class="row">
+
+
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control  input-sm pesquisa_campo" placeholder="busca...">
+                            <span class="input-group-btn">
+                        <button class="btn btn-xs glyphicon glyphicon-search btn_pesquisa" type="button"></button>
+                    </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class=" col-lg-4 col-md-4  area_cliente ">
                 <button class="btn area_do_cliente" type="button" value="Area do cliente" name="dashboard">area do cliente</button>
             </div>
         </div>
@@ -57,7 +77,9 @@
 
                         <div class="row top_row">
                             <div class="cabecalho">
+
                                 <a href="index.html"><img src="img/logo_checon.svg" /></a>
+
                                 <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                                     <a href="#" class="navbar-brand"><img src="img/icons/menu_collapse.svg" style="width: 2em"> </a>
                                     </button>
@@ -68,17 +90,22 @@
 
                                         <ul class="nav nav-pills">
                                             <li><a href="index.html">Home</a></li>
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="pesquisas.html">Pesquisa<span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="pesquisas.html#topo" class="scroll">Qualitativa</a></li>
-                                                    <li><a href="pesquisas.html#link2" class="scroll">Quantitativa</a></li>
-                                                    <li><a href="pesquisas.html#link3" class="scroll">Neuromarketing</a></li>
-                                                    <li><a href="pesquisas.html#link4" class="scroll">Demografica</a></li>
-                                                </ul>
-                                            </li>
-
                                             <li><a href="institucional.html">institucional</a></li>
+                                            <li><a href="pesquisas.html">Soluções</a></li>
+                                            <!-- DROPDOWN PESQUISAS
+                                                            <li class="dropdown">
+                                                            <a class="dropdown-toggle" data-toggle="dropdown" href="pesquisas.html">Pesquisa<span class="caret"></span></a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="pesquisas.html#topo" class="scroll">Qualitativa</a></li>
+                                                                <li><a href="pesquisas.html#link2" class="scroll">Quantitativa</a></li>
+                                                                <li><a href="pesquisas.html#link3" class="scroll">Neuromarketing</a></li>
+                                                                <li><a href="pesquisas.html#link4" class="scroll">Demografica</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        -->
+
+                                            <li><a href="#">Cases</a></li>
+
                                             <li class="link_blog"><a href="#blog">blog</a></li>
                                         </ul>
                                     </nav>
@@ -159,6 +186,23 @@
 
         </div>
     </div>
+    <div class="row destk">
+        <div class="container-fluid">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 card_col" style="border: red 1px solid">
+                oie
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 card_col" style="border: red 1px solid">
+                oie
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 card_col" style="border: red 1px solid">
+                oie
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 card_col" style="border: red 1px solid">
+                oie
+            </div>
+        </div>
+
+    </div>
     <!--FIM CORPO MUTAVEL-->
     <footer>
         <div class="row footer_row">
@@ -177,27 +221,27 @@
                                 <div class="icon"><i class="fa fa-map-marker"> <img src="img/icons/map-location.svg"></i></div>
 
                                 <p>SCRN 712/713 Bl. B Ent. 6 - Loja 6 Cep:70.760.620 Brasília-DF - Brasil</p>
-                                <button class="btn" data-toggle="modal" data-target="#myModal">Ver no mapa</button>
-                                <div class="modal fade" tabindex="-1" role="dialog">
+                                <button class="btn" data-toggle="modal" data-target="#mapaGoogle">Ver no mapa</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="mapaGoogle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title">Modal title</h4>
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
                                             </div>
                                             <div class="modal-body">
-                                                <p>One fine body&hellip;</p>
+                                                ...
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                 <button type="button" class="btn btn-primary">Save changes</button>
                                             </div>
                                         </div>
-                                        <!-- /.modal-content -->
                                     </div>
-                                    <!-- /.modal-dialog -->
                                 </div>
-                                <!-- /.modal -->
                             </div>
 
                         </div>
@@ -265,8 +309,10 @@
 
     </footer>
 
-    <script src="js/scroll.js">
-    </script>
+    <script src="js/scroll.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Resource jQuery -->
 </body>
 
 </html>
