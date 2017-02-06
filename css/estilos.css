@@ -33,18 +33,24 @@ h2 {
 }
 
 .topo {
-    background: #efefef;
+    background: rgba(253, 246, 218, 0.98);
     border-top: 0.6em darkred solid;
     min-width: 300px;
 }
 
 .cabecalho img {
     max-width: 180px;
+    background: #fff;
+    padding: 8px 20px 19px;
+    z-index: 1000;
+    position: relative;
+    bottom: -12px;
+    margin-top: -12px;
 }
 
 .top_row {
     box-sizing: border-box;
-    padding: 9px 26px;
+    padding: 0px 26px;
 }
 
 #ao_topo {
@@ -151,9 +157,19 @@ h2 {
     width: 60px;
 }
 
+.muda-liguagem li:hover {
+    background: #efefef;
+    color: #333;
+}
+
 .muda-liguagem li a {
     display: block;
     color: gainsboro;
+}
+
+.muda-liguagem li a:hover {
+    text-decoration: none;
+    color: #333;
 }
 
 .navbar-toggle {
