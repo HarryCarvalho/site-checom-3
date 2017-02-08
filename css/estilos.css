@@ -47,6 +47,18 @@ h2 {
     bottom: -12px;
     margin-top: -12px;
 }
+.midias_sociais li{
+    max-width:25px;
+    float:left;
+    list-style:none;
+    margin-left: 10px;
+}
+.midias_sociais li a:hover{
+    display: block;
+    background: #a71c20;
+    transform-duration:0.5s;
+    
+    }
 
 .navbar-brand img {
     max-width: 40px;
@@ -429,6 +441,11 @@ strong {
     font-weight: 600;
 }
 
+.icon {
+    float: left;
+    width: auto;
+}
+
 .icon_point {
     float: left;
     margin-right: 15px;
@@ -568,20 +585,28 @@ muda-liguagem {
     float:left;
     
 }
+.descricao_lateral ul{
+    width:200px;
+    float:right;
+}
 .descricao_lateral ul li {
     list-style: none;
 }
 .descricao_lateral ul li a{
-    display:block;
-    background:red;
+    display: block;
+    background: #3f3f3f;
     color: white;
     list-style: none;
-    text-decoration:none;
-    margin:10px 0;
-    padding:15px;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 4px 10px;
+    text-align: -webkit-auto;
+    border-left: #a71c20 solid 5px;
 }
 .descricao_lateral ul li a:hover{
-    background:#525050;
+    background:#a71c20;
+   transition-duration:0.5s;
+    
 }
 .content-wrap section .descricao_lateral {
        width: 45%;
