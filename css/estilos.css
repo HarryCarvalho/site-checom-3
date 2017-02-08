@@ -358,7 +358,6 @@ strong {
     font-size: 2em;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 20px;
     height: 5em;
 }
 
@@ -400,7 +399,11 @@ strong {
 .col-lg-10.col-md-10.col-sm-9.col-xs-12.corpo {
     padding: 0 30px;
 }
+.tabs-style-linemove img{
+    max-width:40px;
+    float:left;
 
+}
 
 /*rodape*/
 
@@ -556,6 +559,51 @@ muda-liguagem {
     background: #f5f5f5;
     padding: 50px 30px;
     color: #0e0e0e;
+}
+.content-wrap section h2 {
+    text-align:left;
+}
+.content-wrap section .descricao {
+    max-width:45%;
+    float:left;
+    
+}
+.descricao_lateral ul li {
+    list-style: none;
+}
+.descricao_lateral ul li a{
+    display:block;
+    background:red;
+    color: white;
+    list-style: none;
+    text-decoration:none;
+    margin:10px 0;
+    padding:15px;
+}
+.descricao_lateral ul li a:hover{
+    background:#525050;
+}
+.content-wrap section .descricao_lateral {
+       width: 45%;
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.content-wrap section .descricao_lateral {
+    margin-top:0;
+}
+
+.content-wrap section p {
+        margin: 0;
+    padding: 0.75em 1em;
+    color: rgb(134, 130, 130);
+    line-height: 1.2;
+    font-size: 0.8em;
+    text-align: -webkit-left;
+    text-align: initial;
+    font-weight: normal;
 }
 
 
