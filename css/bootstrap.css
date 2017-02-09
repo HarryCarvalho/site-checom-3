@@ -4861,9 +4861,9 @@
     .nav-tabs>li.active>a,
     .nav-tabs>li.active>a:hover,
     .nav-tabs>li.active>a:focus {
-        color: #555;
+        color: #fff;
         cursor: default;
-        background-color: #fff;
+        background-color: #ab1a1a;
         border: 1px solid #ddd;
         border-bottom: solid 1px rgb(162, 51, 51);
     }
