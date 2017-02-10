@@ -120,7 +120,7 @@
 
                                         <ul class="nav nav-pills">
                                             <!-- <li><a href="index.html">Home</a></li>-->
-                                            <li><a href="institucional_checon.html">institucional</a></li>
+                                            <li><a href="institucional_checon.html">Institucional</a></li>
                                             <li><a href="solucoes.html">Soluções</a></li>
                                             <!-- DROPDOWN PESQUISAS
                                                             <li class="dropdown">
@@ -136,7 +136,7 @@
 
                                             <li><a href="congressos_e_eventos.html">Congressos e Eventos</a></li>
 
-                                            <li><a href="cases_e_artigos.html">Case e artigos</a></li>
+                                            <li><a href="cases_e_artigos.html">Cases e artigos</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -150,6 +150,7 @@
             </div>
         </div>
     </header>
+
 
     <!--Fim topo-->
     <!--CORPO MUTAVEL-->
@@ -280,51 +281,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 localizacao">
-                    <a href="#">
-                        <div class="icon_point">
-                            <img class="img-responsive" src="img/icons/map-location.svg" style="width: 60px;">
-                        </div>
-                        <p>SCRN 721/713 Bl. B Ent. 6 - Loja 6 Cep:70.760.620 Brasília-DF - Brasil</p>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mapa_site">
-                    <b>links</b></br>
-                    <ul>
-                        <li><a href="#">pesquisas</a></li>
-                        <li><a href="#">institucional</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">pesquisas</a></li>
-                        <li><a href="#">institucional</a></li>
-                        <li><a href="#">blog</a></li>
-                    </ul>
 
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 contato">
-                    <b>contatos</b></br>
-
-                    <h2>
-                        Fone
-                    </h2>
-                    
-
-                    <form class="mensagem">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="password" class="form-control" id="pwd">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-
-
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-
-                </div>
-                -->
             </div>
             <div class="container-fluid copyrigths">
                 <p>Todos os direitos reservados - Checon Pesquisa - 2017</p>
@@ -346,6 +303,47 @@
             });
 
         })();
+    </script>
+    <script>
+        //funcionamento modais
+        $(document).ready(function() {
+            $("a[rel=modal]").click(function(ev) {
+                ev.preventDefault();
+
+                var id = $(this).attr("href");
+
+                var alturaTela = $(document).height();
+                var larguraTela = $(window).width();
+
+                //colocando o fundo preto
+                $('#mascara').css({
+                    'width': larguraTela,
+                    'height': alturaTela
+                });
+                $('#mascara').fadeIn(200);
+                $('#mascara').fadeTo("slow", 0.8);
+
+                var left = ($(window).width() / 2) - ($(id).width() / 2);
+                var top = ($(window).height() / 2) - ($(id).height() / 2);
+
+                $(id).css({
+                    'top': top,
+                    'left': left
+                });
+                $(id).show();
+            });
+
+            $("#mascara").click(function() {
+                $(this).hide();
+                $(".window").hide();
+            });
+
+            $('.fechar').click(function(ev) {
+                ev.preventDefault();
+                $("#mascara").hide();
+                $(".window").hide();
+            });
+        });
     </script>
     <!-- Resource jQuery -->
 
